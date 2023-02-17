@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  width: 100vw;
+  height: 14vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+  background-color: white;
+}
+.header img {
+  margin-left: 30px;
+  margin-top: 10px;
+}
+.header button {
+  height: 50px;
+  margin-top: 10px;
+  margin-right: 30px;
+  background-color: #f13f50;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+}
+.header button:hover {
+  transition: 0.3s;
+  background-color: black;
+  cursor: pointer;
+}
+.header a {
+  text-decoration: none;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+}
+
+.section-one {
+  width: 100vw;
+  height: 80vh;
+  background-image: url(/img/homem-terno.avif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: baseline;
+  overflow: hidden;
+}
+.section-one h1 {
+  font-size: 2.3rem;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  letter-spacing: 1px;
+  margin-top: 100px;
+  text-shadow: 1px 1px 2px black;
+  text-align: center;
+  text-transform: uppercase;
+}
+.section-one p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.9rem;
+  color: white;
+  text-shadow: 1px 1px 2px black;
+  margin-top: 10px;
+}
+.section-one button {
+  width: 450px;
+  height: 45px;
+  margin-top: 90px;
+  background-color: #f13f50;
+  border: none;
+  border-radius: 4px;
+}
+.section-one button:hover {
+  transition: 0.4s;
+  background-color: black;
+}
+.section-one button a {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  color: white;
+  text-decoration: none;
+}
+
+.article-ads {
+  width: 100vw;
+  height: 40vh;
+  background-color: #e7e7e7;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.article-ads .ag, .article-ads .mane, .article-ads .unc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+}
+.article-ads .ag h2, .article-ads .mane h2, .article-ads .unc h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.3rem;
+}
+.article-ads .ag p, .article-ads .mane p, .article-ads .unc p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2;
+  font-weight: 500;
+}
+
+@media (max-width: 425px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 10vh;
+  }
+  .header img {
+    margin-top: 10px;
+  }
+  .header button {
+    display: none;
+  }
+  .section-one {
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .section-one h1 {
+    font-size: 1rem;
+    margin-top: 20px;
+  }
+  .section-one p {
+    margin-top: -5px;
+    font-size: 0.9rem;
+  }
+  .section-one button {
+    width: 140px;
+    height: 30px;
+    margin-top: 10px;
+  }
+  .section-one button a {
+    text-align: center;
+    font-size: 10px;
+  }
+  .article-ads {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    height: 90vh;
+  }
+  .article-ads .ag, .article-ads .mane, .article-ads .unc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+  }
+  .article-ads .ag h2, .article-ads .mane h2, .article-ads .unc h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+  }
+  .article-ads .ag p, .article-ads .mane p, .article-ads .unc p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 500;
+  }
+  .article-ads .ag img, .article-ads .mane img, .article-ads .unc img {
+    width: 50px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
